@@ -1,0 +1,82 @@
+module Base {
+    model WalkieTalkieTransponder
+    {
+        mesh = Weapons/1Handed/WalkieTalkie,
+        texture = Model_Transponder,
+    }
+    item Transponder 
+    {
+        Type = Normal,
+        Icon = Transponder,
+        Tooltip = Tracks down living humans by detecting heartbeats., 
+        Weight = 1.0,
+        Count = 1,
+        AttachmentType = Walkie,
+        DisplayCategory = Tool,
+        DisplayName = Transponder,
+        StaticModel = WalkieTalkieTransponder,
+        WorldStaticModel = WalkieTalkieTransponder,
+    }
+    sound TransponderBeep1
+    {
+        category = Item,
+		loop = true,
+        clip
+        {
+            file = media/sound/beep1.wav,
+        }       
+    }
+    sound TransponderBeep2
+    {
+        category = Item,
+		loop = true,
+        clip
+        {
+            file = media/sound/beep2.wav,
+        }       
+    }
+    sound TransponderBeep3
+    {
+        category = Item,
+		loop = true,
+        clip
+        {
+            file = media/sound/beep3.wav,
+        }       
+    }
+    sound TransponderBeep4
+    {
+        category = Item,
+		loop = true,
+        clip
+        {
+            file = media/sound/beep4.wav,
+        }       
+    }
+    sound TransponderBeep5
+    {
+        category = Item,
+		loop = true,
+        clip
+        {
+            file = media/sound/beep5.wav,
+        }       
+    }
+    sound TransponderBeep6
+    {
+        category = Item,
+		loop = true,
+        clip
+        {
+            file = media/sound/beep6.wav,
+        }       
+    }
+    sound TransponderChangeBand
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/changeband.wav,
+        }
+    }
+}
